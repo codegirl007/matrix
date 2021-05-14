@@ -15,7 +15,7 @@ const RedPill = styled.img`
 export const BluePill = () => {
     return (
         <BlackDiv>
-            I am very sorry, but there is only one option
+            I am very sorry, but there is only one option...
             <Link to="/app"><RedPill src="./images/redpill.png"/></Link>
         </BlackDiv>
     );
