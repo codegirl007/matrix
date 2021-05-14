@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
-const WelcomeDiv = styled.div`
+export const WelcomeDiv = styled.div`
     height: 100vh;
     width: 100%;
     display: flex;
@@ -18,14 +18,41 @@ const WelcomeDiv = styled.div`
 
 const Heading1 = styled.h1`
     margin-bottom: 3rem;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.2;
 `
+const Morpheus = styled.div`
+    position: relative;
+`
+export const Red = styled.img`
+    position: absolute;
+    top:70%;
+    left: 13%;
+    width: 60px;
+    cursor: pointer;
+`
+const Blue = styled.img`
+    position: absolute;
+    top:70%;
+    right: 13%;
+    width: 60px;
+    transform: rotateY(180deg);
+    cursor: pointer;
+`
+
 
 export const WelcomeScreen = () => {
     return (
         <WelcomeDiv>  
-                   <Heading1>Click on Morpheus to start the game</Heading1>
-                   <Link to="/app"><img src="./images/morpheus.jpg"/></Link>
-          
+            <Heading1>CHOOSE WISELY. <br/> 
+            <span style={{color: "red"}}>Red pill</span> is gonna start the game. <br/> 
+            <span style={{color: "blue"}}>Blue pill</span> is gonna show you that you are running out of life choices.... </Heading1>
+            <Morpheus>
+                <img src="./images/morpheus.jpg" />  
+                <Link to="/app"><Red src="./images/redpill.png"/></Link> 
+                <Link to="/bluePill"><Blue src="./images/bluepill.png"/></Link>   
+            </Morpheus>                   
         </WelcomeDiv>
     )
 }
