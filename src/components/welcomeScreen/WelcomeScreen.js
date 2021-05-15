@@ -23,7 +23,7 @@ const Heading1 = styled.h1`
     line-height: 1.2;
 `
 const Morpheus = styled.div`
-    position: relative;
+    position: relative; 
 `
 export const Red = styled.img`
     position: absolute;

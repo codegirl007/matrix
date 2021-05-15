@@ -27,7 +27,7 @@ export const App = () => {
   const guessedNumbers = useMemo(() => [], [gameCount]);
   
   //define messages
-  const welcomeMessage = "Welcome!";
+  const welcomeMessage = "Let's play!";
   const winningMessage = "Congratulations! You are the Oracle!";
   const tooLowMessage = "Too low!";
   const tooHighMessage = "Too high!";
