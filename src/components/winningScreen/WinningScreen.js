@@ -7,7 +7,7 @@ const WinningDiv = styled.div`
   height: 100vh;
   width: 100%;
   padding: 5rem;
-  background-color: black;
+  background-color: #000;
 `;
 const RestartButton = styled(Button)`
   margin-top: 3rem;

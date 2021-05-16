@@ -12,7 +12,7 @@ const InnerDiv = styled.div`
   justify-content: space-evenly;
   align-items: center;
   & > div {
-    color: white;
+    color: #fff;
     width: 100%;
     font-size: 1.7rem;
     text-align: center;
@@ -21,7 +21,7 @@ const InnerDiv = styled.div`
 `;
 
 const CounterInput = styled(StyledInput)`
-  background-color: white;
+  background-color: #fff;
   height: 150px;
   width: 150px;
   font-size: 6em;

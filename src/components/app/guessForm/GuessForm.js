@@ -52,7 +52,7 @@ export const Button = styled.button`
     color: #3dff2b;
     transition: all 0.3ms ease-in-out;
   }
-  &: active {
+  &:active {
     transform: translateY(4px);
   }
 `;

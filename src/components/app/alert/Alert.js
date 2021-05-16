@@ -11,7 +11,7 @@ justify-content: center;
 align-items: center;
 // display: none;
    & > p {
-    color: black;
+    color: #000;
     font-weight: 800;
     font-size: 30px;
     line-height: 130%;
