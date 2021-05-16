@@ -43,9 +43,7 @@ export const App = () => {
   }
 
   //define last guessed number
-  const lastGuessedNumber = guessedNumbers.length
-    ? guessedNumbers[guessedNumbers.length - 1]
-    : null;
+  const lastGuessedNumber = guessedNumbers.length && guessedNumbers[guessedNumbers.length - 1];
 
   // compare guessed and random numbers and show proper message
   const getMessage = () => {
