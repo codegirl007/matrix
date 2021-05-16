@@ -4,6 +4,10 @@ import { WelcomeScreen } from "./components/welcomeScreen/WelcomeScreen";
 import { App } from "./components/app/App";
 import { BluePill } from "./components/bluePill/BluePill";
 
+{
+  /* Recomended change naming of routes to /game atd .... this routes can see customers in browser so should be semantically telling*/
+}
+
 export const Routes = () => {
   return (
     <>

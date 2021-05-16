@@ -39,7 +39,7 @@ const Ul = styled.ul`
 `;
 
 {
-  /* You dont need <></> whis, cause MainSection wrapped it */
+  /* HowToPlaySection is just for show code, so its no neccesary use return as function, just const is enought. If you dont use logic as useState, useEffect, anything above "return"  */
 }
 export const HowToPlaySection = () => {
   return (

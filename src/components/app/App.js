@@ -86,6 +86,7 @@ export const App = () => {
           <div className="wrapper">
             <Alert message={getMessage()} />
             <header className="header">
+              {/* crete from headline separate compnents*/}
               <h1 id="headline">
                 Ca<span>N</span> you gu<span>E</span>ss the mysteri
                 <span>O</span>us number?
