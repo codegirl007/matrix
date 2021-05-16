@@ -20,6 +20,9 @@ const StyledAlert = styled.div`
   }
 `;
 
+{
+  /* <></> is no neccesaraz, StyledAlert wrapped it as one html element */
+}
 export const Alert = (props) => {
   return (
     <>

@@ -2,12 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import { MainSection, H2 } from "../howToPlaySection/HowToPlaySection";
 
+{
+  /* If you no skip html by element or no style it, use default is eenoguth, so use H2 or MainSection directly  */
+}
 const MainSection2 = styled(MainSection)``;
 const Heading2 = styled(H2)``;
+
 const SecretNumberDiv = styled.div`
   display: flex;
   align-items: center;
-
+  /*  & p ?  */
   & p {
     font-size: 2rem;
     line-height: 130%;

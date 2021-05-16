@@ -63,10 +63,12 @@ export const GuessForm = (props) => {
     <>
       <Form onSubmit={handleFormGuess}>
         <h3>Number between 0 and 100:</h3>
+        {/* You use StyledInput twice, why dont create it as components? */}
         <StyledInput
           type="number"
           min="0"
           max="100"
+          // why is placeholder 55?
           placeholder="55"
           value={value}
           onChange={onChangedValue}

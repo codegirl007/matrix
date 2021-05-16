@@ -24,6 +24,10 @@ export const H2 = styled.h2`
   position: absolute;
   top: 5%;
 `;
+
+{
+  /* Better is naming this function as const List, we can use Button, cause its button, but ul is list */
+}
 const Ul = styled.ul`
   text-align: center;
   & > li {
@@ -34,11 +38,16 @@ const Ul = styled.ul`
   }
 `;
 
+{
+  /* You dont need <></> whis, cause MainSection wrapped it */
+}
 export const HowToPlaySection = () => {
   return (
     <>
+      {/* You dont need <></> whis, cause MainSection wrapped it */}
       <MainSection>
         <H2>How to play</H2>
+        {/* Try to use map function here for improvement code  */}
         <Ul>
           <li>Guess the secret number between 0 and 100.</li>
           <li>If you guess incorrect number, you will get a hint.</li>

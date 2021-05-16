@@ -25,6 +25,10 @@ const Heading1 = styled.h1`
 const Morpheus = styled.div`
   position: relative;
 `;
+
+{
+  /* Use better naming how to descript element, for example RedPillImage, when developer see code and just Red, he can't recognize it for the first time what is it */
+}
 export const Red = styled.img`
   position: absolute;
   top: 70%;
@@ -32,6 +36,10 @@ export const Red = styled.img`
   width: 60px;
   cursor: pointer;
 `;
+
+{
+  /* same  */
+}
 const Blue = styled.img`
   position: absolute;
   top: 70%;

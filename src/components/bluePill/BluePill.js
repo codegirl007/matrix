@@ -12,6 +12,15 @@ const RedPill = styled.img`
   margin-top: 3rem;
 `;
 
+// export const BluePill = () => (
+//     <BlackDiv>
+//        I am very sorry, but there is only one option...
+//        <Link to="/app">
+//            <RedPill src="./images/redpill.png" />
+//        </Link>
+//    </BlackDiv>
+// )
+
 export const BluePill = () => {
   return (
     <BlackDiv>
