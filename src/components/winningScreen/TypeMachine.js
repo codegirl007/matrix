@@ -1,29 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 
+// CongratulationText naming
 const TextDiv = styled.div`
-    font-size: 4rem;
-    font-family: 'Turret Road', cursive;
-    color: #00FF41;
-`
+  font-size: 4rem;
+  font-family: "Turret Road", cursive;
+  color: #00ff41;
+`;
 
-
-export const TypeMachine = ({textToType, delay}) => {
-
+export const TypeMachine = ({ guesses }) => {
   const [text, setText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  
-  useEffect(() => {    
-    if (currentIndex < textToType.length) {
+  const guessWordPlurality = `guess${guesses === 1 ? "" : "es"}`;
+  const typedMessage = `Congratulations, you are the Oracle. You have won in ${guesses} ${guessWordPlurality}. Restart the game.....`;
+
+  useEffect(() => {
+    if (currentIndex < typedMessage.length) {
       setTimeout(() => {
-        setText(text + textToType[currentIndex]);
+        setText(text + typedMessage[currentIndex]);
         setCurrentIndex(currentIndex + 1);
-      }, delay);
+      }, 100);
     }
   }, [currentIndex]);
 
-
-  return (
-  <TextDiv>{text}</TextDiv>
-  )
-}
+  return <TextDiv>{text}</TextDiv>;
+};
