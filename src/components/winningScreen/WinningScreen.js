@@ -35,11 +35,11 @@ export const WinningScreen = (props) => {
   return (
     <WinningDiv>
       <TypeMachine textToType={typedMessage} delay={100} />
-      {showButton ? (
+      {showButton && (
         <RestartButton type="submit" onClick={restart}>
           RESTART GAME
         </RestartButton>
-      ) : null}
+      )}
     </WinningDiv>
   );
 };
