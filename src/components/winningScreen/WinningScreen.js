@@ -21,10 +21,9 @@ const RestartButton = styled(Button)`
 `;
 
 export const WinningScreen = (props) => {
+  const { guesses, restart } = props;
   const [showButton, setShowButton] = useState(false);
-  const typedMessage = `Congratulations, you are the Oracle. You have won in ${
-    props.guesses
-  } guess${props.guesses === 1 ? "" : "es"}. Restart the game.....`;
+  const typedMessage = `Congratulations, you are the Oracle. You have won in ${guesses} guess${guesses === 1 ? "" : "es"}. Restart the game.....`;
 
   useEffect(() => {
     setTimeout(() => {
@@ -36,7 +35,7 @@ export const WinningScreen = (props) => {
     <WinningDiv>
       <TypeMachine textToType={typedMessage} delay={100} />
       {showButton ? (
-        <RestartButton type="submit" onClick={props.restart}>
+        <RestartButton type="submit" onClick={restart}>
           RESTART GAME
         </RestartButton>
       ) : null}

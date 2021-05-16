@@ -58,17 +58,18 @@ export const Button = styled.button`
 `;
 
 export const GuessForm = (props) => {
+  const { handleFormGuess, value, onChangedValue } = props;
   return (
     <>
-      <Form onSubmit={props.handleFormGuess}>
+      <Form onSubmit={handleFormGuess}>
         <h3>Number between 0 and 100:</h3>
         <StyledInput
           type="number"
           min="0"
           max="100"
           placeholder="55"
-          value={props.value}
-          onChange={props.onChangedValue}
+          value={value}
+          onChange={onChangedValue}
         />
         <Button type="submit">guess</Button>
       </Form>

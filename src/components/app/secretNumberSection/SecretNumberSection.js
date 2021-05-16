@@ -45,19 +45,20 @@ const ImgDiv = styled.div`
 `;
 
 export const SecretNumberSection = (props) => {
+  const { minValue, value, maxValue } = props;
   return (
     <>
       <MainSection2>
         <Heading2>Secret Number</Heading2>
         <SecretNumberDiv>
-          <p class="number">{props.minValue}</p>
+          <p class="number">{minValue}</p>
           <p class="arrow">&lt;</p>
           <ImgDiv>
             <img src="./images/sunglasses.png" />
-            <p>{props.value}</p>
+            <p>{value}</p>
           </ImgDiv>
           <p class="arrow right-arrow">&gt;</p>
-          <p class="number">{props.maxValue}</p>
+          <p class="number">{maxValue}</p>
         </SecretNumberDiv>
       </MainSection2>
     </>
