@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const StyledAlert = styled.div`
 height: 8%;
@@ -19,15 +19,14 @@ align-items: center;
     text-transform: uppercase;
    }
 }
-`
+`;
 
 export const Alert = (props) => {
-    return (
-        <>
-          <StyledAlert>
-              <p>{props.message}</p>
-          </StyledAlert>  
-        </>
-    );
-}
-
+  return (
+    <>
+      <StyledAlert>
+        <p>{props.message}</p>
+      </StyledAlert>
+    </>
+  );
+};
